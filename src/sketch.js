@@ -25,7 +25,7 @@ function Sketch({movS}) {
   useEffect(() => {
     const s = (p) => {
       p.setup = () => {        
-        p.createCanvas(140, 140);       
+        p.createCanvas(150, 150);       
       };
   
 
@@ -94,13 +94,13 @@ function Sketch({movS}) {
         }      
         const olhoDentroPos = p5.Vector.add(olhoPos, dir);
         p.fill(250, 250, 250);
-        p.circle(olhoPos.x, olhoPos.y, olhoRaio * 3);      
+        p.circle(olhoPos.x, olhoPos.y, olhoRaio * 3.5);      
         p.fill(0, 0, 0);
-        p.circle(olhoDentroPos.x, olhoDentroPos.y, 20);   
+        p.circle(olhoDentroPos.x, olhoDentroPos.y, 40);   
       }
 
       function sombrancelha(){
-        p.rect(60, movSy, 120, 5); 
+        p.rect(50, movSy, 120, 5); 
       }
 
       function sombrancelhaSobe(){
